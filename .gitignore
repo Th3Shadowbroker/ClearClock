@@ -9,3 +9,4 @@ ClearClock.includes
 ClearClock.plasmoid
 .kdev4
 ClearClock.kdev4
+*.tar.gz
