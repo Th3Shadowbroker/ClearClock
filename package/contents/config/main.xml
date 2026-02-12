@@ -8,6 +8,10 @@
   <group name="Appearance">
 
       <!-- Clock Display Settings -->
+    <entry name="hideClock" type="Bool">
+      <label>Hide the clock.</label>
+      <default>false</default>
+    </entry>
     <entry name="clockUse24hFormat" type="Bool">
       <label>Forces the clock to use 12/24 hour time, instead of following the user locale.</label>
       <default>true</default>

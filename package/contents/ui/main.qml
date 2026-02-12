@@ -72,6 +72,7 @@ PlasmoidItem {
 
             Text {
                 id: clockLabel
+                visible: !plasmoid.configuration.hideClock
                 anchors.centerIn: parent
 
                 property var getTextFormat: {

@@ -20,8 +20,9 @@ KCM.SimpleKCM {
 
     signal configurationChanged
 
-    property alias cfg_clockUse24hFormat: use24hFormat.checkState
-    property alias cfg_clockShowSeconds: showSeconds.checkState
+    property alias cfg_hideClock: hideClock.checked
+    property alias cfg_clockUse24hFormat: use24hFormat.checked
+    property alias cfg_clockShowSeconds: showSeconds.checked
     property alias cfg_clockSeparator: clockSeparatorTextField.text
     property string cfg_clockFontColor
     property string cfg_clockFontFamily
@@ -88,6 +89,12 @@ KCM.SimpleKCM {
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
             Kirigami.FormData.label: "Clock Display Settings"
+        }
+
+        QtControls.CheckBox {
+            Kirigami.FormData.label: "Hide the clock"
+            id: hideClock
+            tristate: false
         }
 
         QtControls.CheckBox {
